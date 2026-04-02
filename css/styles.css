@@ -132,3 +132,12 @@ a {
 .badge--experience {
   background-color: var(--color-body);
 }
+
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
