@@ -156,7 +156,24 @@ a {
 
 /* Icons */
 .icon {
+  width: 42px;
+  height: 42px;
+}
+
+.icon--godot {
   width: 36px;
   height: 36px;
-  fill: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .icon {
+  width: 36px;
+  height: 36px;
+  }
+
+  .icon--godot {
+  width: 24px;
+  height: 24px;
+  }
+
 }
