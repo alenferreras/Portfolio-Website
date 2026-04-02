@@ -81,4 +81,28 @@ p {
   }
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
 
+.link-arrow {
+  color: var(--color-body);
+  font-size: 3rem;
+}
+
+.link-arrow::after {
+  content: "➜";
+  margin-left: 10px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 2rem;
+  }
+}
