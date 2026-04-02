@@ -133,7 +133,6 @@ a {
   background-color: var(--color-body);
 }
 
-
 @media screen and (min-width: 1024px) {
   .badge {
     padding: 1.25rem 1.5rem;
@@ -148,7 +147,7 @@ a {
   color: white;
 }
 
-.list--inline .list__item{
+.list--inline .list__item {
   list-style: none;
   display: inline-block;
   gap: 1.5rem;
@@ -163,8 +162,71 @@ a {
 
 @media screen and (min-width: 1024px) {
   .icon {
-  width: 36px;
-  height: 36px;
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Buttons */
+.btn {
+  font-size: 1.8rem;
+  padding: 1.5rem 6.5rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.15s;
+  display: inline-block;
+  text-align: center;
+  transform-origin: center;
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.btn--accent:hover {
+  transform: scale(1.05);
+}
+
+.btn--icon{
+  width: 7.25rem;
+  height: 7.25rem;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 100%;
+  background-color: var(--color-secondary);
+  transition: background-color 0.15s;
+}
+
+.btn--icon:hover {
+  background-color: var(--color-accent);
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+    padding: 1.25rem 5.5rem;
   }
 
+  .btn--accent:hover {
+    font-size: 1.7rem;
+  }
+
+  .btn--icon {
+    width: 6.75rem;
+    height: 6.75rem;
+    padding: 1.5rem;
+  }
 }
