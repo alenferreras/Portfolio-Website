@@ -28,7 +28,7 @@ body {
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
-  background-color: var(--color-headings);
+  background-color: var(--color-primary);
 }
 
 h1,
@@ -140,4 +140,16 @@ a {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+}
+
+/* Lists */
+.list {
+  list-style: disc;
+  color: white;
+}
+
+.list--inline .list__item{
+  list-style: none;
+  display: inline-block;
+  gap: 1.5rem;
 }
