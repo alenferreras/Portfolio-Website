@@ -332,11 +332,32 @@ a {
 
 /* Blocks */
 .block {
-  background-color: var(--color-secondary);
-  padding: 6rem 2rem;
-  border: 2px solid var(--color-headings);
+  --padding-verticle: 6rem;
+  padding: var(--padding-verticle) 2rem;
 }
 
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--bright {
+  background-color: var(--color-headings);
+  color: black;
+}
+
+.block--bright .block__heading {
+  color: black;
+}
+
+/* Container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 
 /* Navigation Bar */
 .nav {
