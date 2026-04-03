@@ -375,6 +375,7 @@ a {
 }
 
 .nav__list {
+  margin: 0;
   padding: 0;
   width: 100%; 
   list-style: none;
@@ -398,4 +399,28 @@ a {
 
 .nav__menu-icon {
   opacity: 0.5;
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__menu-icon {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__menu-icon {
+    display: none;
+  }
+
+  .nav__list {
+    margin-top: 0.5rem;
+    width: auto;
+    display: flex;
+    font-size: 1.5rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border-bottom: none;
+  }
 }
