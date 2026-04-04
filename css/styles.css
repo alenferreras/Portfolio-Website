@@ -291,6 +291,15 @@ a {
   text-shadow: 0px 4px 4px rgb(0, 0, 0);
 }
 
+.card__image__btn {
+  scale: 1;
+  transition: scale 0.15s;
+}
+
+.card__image__btn:hover {
+  scale: 1.025;
+}
+
 .card__image {
   outline: #547792 solid 3px;
   border-radius: 5px;
@@ -305,9 +314,26 @@ a {
   text-shadow: 0px 4px 4px rgb(0, 0, 0);
 }
 
+@media screen and (min-width: 1024px) {
+  .card {
+    scale: 0.9;
+  }
+
+  .card__body {
+  margin-top: -1rem;
+  margin-left: -1rem;
+  color: white;
+  font-size: smaller;
+  text-shadow: 0px 4px 4px rgb(0, 0, 0);
+  }
+}
+
 /* Grids */
 .grid {
   display: grid;
+  gap: 2rem;
+  padding: 0.5rem 4rem;
+  align-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -323,20 +349,6 @@ a {
 }
 
 
-
-@media screen and (min-width: 1024px) {
-  .card {
-    scale: 0.9;
-  }
-
-  .card__body {
-  margin-top: -1rem;
-  margin-left: -1rem;
-  color: white;
-  font-size: smaller;
-  text-shadow: 0px 4px 4px rgb(0, 0, 0);
-  }
-}
 
 /* Collapsibles */
 .collapsible__content {
@@ -385,6 +397,8 @@ a {
 
 /* Navigation Bar */
 .nav {
+  position: sticky;
+  top: 0;
   background-color: var(--color-body);
   display: flex;
   justify-content: space-between;
@@ -484,4 +498,24 @@ a {
     padding: 30rem 8rem 20rem;
     justify-content: center;
   }
+}
+
+/* Projects */
+.projects .block {
+  padding: 0;
+}
+
+.projects .grid {
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project__header {
+  width: 100%;
+  text-align: center;
+  color: var(--color-accent);
+  background-color: var(--color-body);
+  font-size: 3rem;
+  text-shadow: 0px 4px 4px rgb(0, 0, 0);
+  padding: 2rem;
 }
