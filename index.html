@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <nav class="nav collapsible">
@@ -30,8 +31,16 @@
 
     <section class="hero">
       <div class="container">
-        <h1 class="block__heading">Welcome to My Portfolio</h1>
-        <p class="block__subheading">Game Developer/Designer</p>
+        <h1 class="block__heading" data-aos="zoom-out" data-aos-duration="3000">
+          Welcome to My Portfolio
+        </h1>
+        <p
+          class="block__subheading"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          Game Developer/Designer
+        </p>
       </div>
     </section>
 
@@ -40,7 +49,7 @@
         <div class="project__header">Personal Work</div>
       </div>
       <div class="grid grid--1x2 grid--1x3 container">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <header class="card__title">Spaceport Scramble</header>
           <div class="card__image__btn">
             <a href="https://awesomealen.itch.io/spaceport-scramble"
@@ -71,7 +80,7 @@
             </span>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <header class="card__title">Bubble Blower</header>
           <div class="card__image__btn">
             <a href="https://awesomealen.itch.io/bubble-blower"
@@ -102,7 +111,7 @@
             </span>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <header class="card__title">Sea of Storms</header>
           <div class="card__image__btn">
             <a href="https://awesomealen.itch.io/sea-of-storms"
@@ -133,7 +142,7 @@
             </span>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <header class="card__title">Fruit Basket Inc.</header>
           <div class="card__image__btn">
             <a href="https://awesomealen.itch.io/fruitbasket"
@@ -164,7 +173,7 @@
             </span>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <header class="card__title">Spamton Character Mod</header>
           <div class="card__image__btn">
             <a
@@ -195,7 +204,7 @@
             </span>
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
           <header class="card__title">Bandana Dee Character Mod</header>
           <div class="card__image__btn">
             <a
@@ -227,7 +236,7 @@
           </div>
         </div>
       </div>
-      <div class="project__btn">
+      <div class="project__btn" data-aos="zoom-in">
         <a href="https://awesomealen.itch.io/" class="btn btn--accent"
           >View More Projects</a
         >
@@ -236,11 +245,18 @@
 
     <section class="about block">
       <div class="container">
-        <div class="block__header">About Me</div>
+        <div class="block__header" data-aos="fade-up" data-aos-duration="1000">
+          About Me
+        </div>
         <div class="grid grid--1x2">
-          <img src="images/portrait_tiny.jpg" alt="self portrait" />
+          <img
+            src="images/portrait_tiny.jpg"
+            alt="self portrait"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          />
           <div class="about__info">
-            <p class="about__text">
+            <p class="about__text" data-aos="fade-up" data-aos-duration="1000">
               Welcome to my Portfolio website! My name is Alen Ferreras, and I'm
               a software engineer major with a passion for game development and
               design. <br />
@@ -260,15 +276,20 @@
                 background-color: var(--color-secondary);
                 border: none;
               "
+              data-aos="fade-up"
             />
             <div class="about__badges">
-              <span class="badge badge--jams">4+<br />Game Jams</span>
-              <span class="badge badge--projects">5+<br />Projects</span>
-              <span class="badge badge--experience"
+              <span class="badge badge--jams" data-aos="fade-left"
+                >4+<br />Game Jams</span
+              >
+              <span class="badge badge--projects" data-aos="fade-left" data-aos-delay="200"
+                >5+<br />Projects</span
+              >
+              <span class="badge badge--experience" data-aos="fade-left" data-aos-delay="400"
                 >3+<br />Years Experience</span
               >
             </div>
-            <div class="about__link">
+            <div class="about__link" data-aos="fade-right">
               <a href="#" class="link-arrow">See More</a>
             </div>
           </div>
@@ -279,28 +300,28 @@
     <section class="block footer">
       <div class="container">
         <div class="block__header">
-          <h2 class="footer__header">Let's Connect</h2>
-          <p class="footer__text">
+          <h2 class="footer__header" data-aos="fade-up" data-aos-duration="1000">Let's Connect</h2>
+          <p class="footer__text" data-aos="fade-up" data-aos-duration="1000">
             Interested in collaborating or want to learn more about my work?
             Feel free to reach out through any of these platforms!
           </p>
         </div>
         <div class="footer__buttons">
-          <button class="btn--icon">
+          <button class="btn--icon" data-aos="fade-up">
             <a href="mailto:alenferreras@gmail.com">
               <svg class="icon">
                 <use xlink:href="images/sprite.svg#mail-svgrepo-com"></use>
               </svg>
             </a>
           </button>
-          <button class="btn--icon">
+          <button class="btn--icon" data-aos="fade-up" data-aos-delay="200">
             <a href="https://www.linkedin.com/in/alen-ferreras-6777352b5/">
               <svg class="icon">
                 <use xlink:href="images/sprite.svg#linkedin-svgrepo-com"></use>
               </svg>
             </a>
           </button>
-          <button class="btn--icon">
+          <button class="btn--icon" data-aos="fade-up" data-aos-delay="400">
             <svg class="icon">
               <use
                 xlink:href="images/sprite.svg#discord-icon-svgrepo-com"
@@ -315,5 +336,9 @@
     </section>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
