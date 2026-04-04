@@ -522,8 +522,17 @@ a {
   padding: 2rem;
 }
 
-@media screen and (min-width: 768px) {
-  .projects .grid--1x2 {
-    justify-content: center;
-  }
+.project__btn {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+.project__btn {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 }
