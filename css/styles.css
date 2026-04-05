@@ -621,6 +621,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .footer .block__header {
+    padding: 0 2rem 3rem;
+  }
   .footer__header {
     font-size: 4rem;
   }
