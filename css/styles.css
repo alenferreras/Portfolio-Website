@@ -582,6 +582,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .about {
+    padding-bottom: 3rem;
+  }
+}
+
 /* Footer Block */
 .footer {
   background-color: var(--color-body);
@@ -636,6 +642,6 @@ a {
   }
 
   .footer__cr {
-    font-size: 1.25rem
+    font-size: 1.25rem;
   }
 }
